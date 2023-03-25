@@ -1,0 +1,467 @@
+*::selection {
+    background-color: rgb(128, 7, 240);
+    color: aliceblue;
+}
+
+.premium{
+    height: 82vh;
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+   align-items: center;
+}
+.main-container {
+    height: 200vh;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(242, 241, 239);
+}
+
+/* body {
+    background-image: url('../assets/northman.jpeg');
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+  }
+body::before{
+    content: ""; 
+    z-index: -1; 
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(10px);
+} */
+.box-office-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+
+.box-office {
+    width: 18vw;
+    height: 36.5vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(17deg, rgba(2, 0, 36, 1) 0%, rgba(129, 46, 9, 1) 7%, rgba(13, 67, 185, 1) 16%, rgba(9, 9, 121, 1) 35%, rgba(6, 142, 160, 1) 63%, rgba(0, 212, 255, 1) 78%, rgba(255, 0, 217, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    margin: 0 2vw;
+    border-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+th{
+    font-size: 25px;
+    color: rgb(175, 179, 179);
+}
+
+.MiddlePart {
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.box-office-item {
+    display: flex;
+    align-items: center;
+    opacity: .8;
+    transition: transform 1s;
+}
+
+.box-office-item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.box-animation {
+    margin-bottom: 1vh;
+    margin-left: 7vw;
+    font-size: xx-large;
+    animation: box 5s 10s alternate infinite;
+    color: rgb(16, 28, 199);
+    text-shadow: 0 0 10px rgb(11, 224, 240);
+}
+
+@keyframes box {
+
+    100% {
+        transform: translateX(70vw) scale(1.5)
+    }
+}
+
+.description {
+    direction: rtl;
+    width: 75vw;
+    line-height: 4vh;
+    background: rgb(255, 0, 217);
+    background: linear-gradient(137deg, rgba(255, 0, 217, 1) 0%, rgba(0, 212, 255, 1) 23%, rgba(6, 142, 160, 1) 35%, rgba(9, 9, 121, 1) 64%, rgba(13, 67, 185, 1) 79%, rgba(129, 46, 9, 1) 91%, rgba(2, 0, 36, 1) 97%);
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    font-size: larger;
+    text-shadow: 10px 10px 10px rgb(10, 1, 1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.description-none {
+    text-align: center;
+    padding-top: 15vh;
+}
+
+.login {
+    margin-right: 1vw;
+}
+.contact{
+    padding: 8px;
+    border-radius: 20px;
+    background-color: black;
+    position: fixed;
+    bottom: 5vh;
+    right: 3vw;
+    font-size: x-large;
+    color: aliceblue;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color .5s ,color .5s ;
+    
+}
+.contact:hover{
+    background-color: rgb(242, 241, 239);
+    color: black;
+}
+.navbar {
+    background-color: rgb(255, 255, 255);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+
+}
+
+.demo {
+    width: fit-content;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    margin: 2vh 0 10vh;
+    animation: slide 60s linear 1s infinite;
+}
+
+.each-demo {
+    background-color: aqua;
+    width: 15vw;
+    height: 40vh;
+    margin: .5vw;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.each-demo-name {
+    width: 15vw;
+    box-sizing: border-box;
+    margin-left: .5vw;
+    position: relative;
+    bottom: 9.3vh;
+    font-size: larger;
+    color: rgb(37, 36, 36);
+    border: 1px solid white;
+    padding: 1px 0 2px 1vw;
+    background-color: rgb(253, 252, 252);
+    font-style: italic;
+}
+
+.eachMovieComponent {
+    height: 100vh;
+    display: flex;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 22%, rgba(0, 212, 255, 1) 100%);
+}
+
+.eachMovieImg {
+    position: absolute;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgb(7, 7, 7);
+}
+
+.eachMovieTitle {
+    color: antiquewhite;
+    text-align: center;
+}
+
+.eachMovieSummary {
+    font-size: large;
+    color: aliceblue;
+    width: 60vw;
+    text-align: right;
+    margin: 10vh 0 0 2vw;
+
+}
+
+.eachMovieContent {
+    display: flex;
+    flex-direction: column;
+    line-height: 5vh;
+    margin-left: 5vw;
+    margin-top: 4vh;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(-62vw, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.Movies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    margin-bottom: 2vh;
+    align-items: center;
+
+}
+
+.clickable-demo {
+    cursor: pointer;
+
+}
+
+.clickable-demo:hover {
+    opacity: .35;
+}
+
+.searchFailed {
+    display: flex;
+    margin-bottom: 16.8vh;
+    align-items: center;
+}
+
+li.list-group-item {
+    font-size: 1vw;
+}
+
+.countingMovies {
+    color: coral;
+    margin-left: 2vw;
+}
+
+.width-20 {
+    width: 20%;
+}
+.row{
+    margin: 6vh 0;
+}
+.badge{
+   width: fit-content;
+}
+.radius {
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-table {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgb(4, 4, 4);
+}
+
+ul.list-group {
+    width: 15vw;
+    padding: 2rem;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.anker {
+    color: palevioletred;
+    text-decoration: none;
+}
+
+.anker:hover {
+    color: blueviolet;
+}
+
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(6, 100px)/repeat(4, 100px);
+    justify-content: center;
+    align-content: center;
+    row-gap: 1px;
+    column-gap: 1px;
+}
+
+.output {
+    display: flex;
+    font-size: xx-large;
+    grid-column: 1/5;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(223, 248, 248);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.output-text {
+    position: absolute;
+    right: 1vw;
+    color: rgb(14, 2, 86);
+}
+
+.buttons {
+    border: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(6, 210, 237, 0.856);
+    font-size: x-large;
+    justify-self: center;
+    align-self: center;
+}
+
+.buttons:hover {
+    background-color: rgba(0, 200, 255, 0.812);
+    color: rgb(255, 253, 253);
+}
+
+.input {
+    margin-top: .5vh;
+    margin-bottom: 2vh;
+    width: 60vw;
+
+}
+
+.form-back {
+    background-image: url('../assets/northman.jpeg');
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.form-back::before {
+    content: "";
+    z-index: -1;
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(7px);
+}
+.name-id{
+    text-align: center;
+    width: fit-content;
+   margin: 5vh auto ;
+
+}
+
+.h1 {
+    position: relative;
+    right: 26vw;
+    margin-bottom: 5vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    text-shadow: 1px 1px 6px rebeccapurple;
+    font-style: italic;
+    animation: pop 5s 1s 1 forwards;
+}
+
+.design-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select {
+    background-color: rgb(225, 227, 228);
+}
+
+.selection {
+    display: flex;
+
+}
+
+.selectionIcon {
+    position: absolute;
+    right: 20.5vw;
+    margin-top: 1.8vh;
+    opacity: .5;
+}
+
+.new-movie {
+
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(233, 136, 17, 0.856);
+    color: rgb(243, 236, 236);
+}
+
+.new-movie:hover {
+    background-color: rgb(233, 136, 17);
+    color: rgb(255, 255, 255);
+}
+
+@keyframes pop {
+    100% {
+        transform: translateX(25.5vw);
+    }
+}
+
+@media screen and (max-width:810px) {
+    .sizeMeasuring {
+        flex-direction: column;
+    }
+
+    .width {
+        width: 100%;
+        padding: 0 10vw;
+        margin-bottom: 5vh;
+    }
+
+    ul.list-group {
+        width: 50%;
+        align-self: center;
+    }
+
+    li.list-group-item {
+        font-size: 2vw;
+    }
+
+}
